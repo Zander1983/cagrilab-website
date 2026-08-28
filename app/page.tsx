@@ -12,22 +12,25 @@ export default function Home() {
             />
           </a>
 
-          <nav className="nav-links">
-            <a href="/about">About</a>
-            <a href="/use-cases">Use Cases</a>
-            <a href="/results">Results</a>
-            <a href="/news">News</a>
-            <a href="/partners">Partners</a>
-          </nav>
 
-          <a
-            className="button button-small"
-            href="https://cagrilab.pcss.pl/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Explore Platform
-          </a>
+        <nav className="nav-links">
+          <a href="/about">About</a>
+          <a href="/use-cases">Use Cases</a>
+          <a href="/results">Results</a>
+          <a href="/news">News</a>
+          <a href="/partners">Partners</a>
+          <a href="/signup">Join CAgriLab</a>
+        </nav>
+
+        <a
+          className="button button-small"
+          href="https://cagrilab.pcss.pl/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Explore Platform
+        </a>
+
         </div>
       </header>
 

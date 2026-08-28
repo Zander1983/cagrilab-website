@@ -1710,3 +1710,47 @@ footer {
     align-items: flex-start;
   }
 }
+
+.signup-hero {
+  padding: 90px 0 65px;
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(116, 184, 67, 0.14),
+      transparent 30%
+    ),
+    linear-gradient(180deg, #fbfcf8 0%, #f4f7f1 100%);
+}
+
+.signup-heading {
+  max-width: 800px;
+}
+
+.signup-heading h1 {
+  margin: 0 0 22px;
+  color: var(--green-dark);
+  font-size: clamp(50px, 6vw, 76px);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.signup-heading p {
+  max-width: 700px;
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.65;
+}
+
+.signup-section {
+  padding: 70px 0 100px;
+}
+
+.signup-form-wrapper {
+  max-width: 900px;
+}
+
+.signup-form-wrapper iframe {
+  display: block;
+  border: none;
+  background: white;
+}
