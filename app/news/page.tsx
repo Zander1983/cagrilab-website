@@ -1,4 +1,5 @@
 import { newsItems } from "./news";
+import Footer from "@/app/components/Footer";
 
 
 export default function NewsPage() {
@@ -116,40 +117,8 @@ export default function NewsPage() {
       </section>
 
       {/* Footer */}
-      <footer>
-        <div className="container footer-grid">
-          <div>
-            <div className="footer-brand">
-              <img
-                src="/cagrilab_logo.png"
-                alt="CAgriLab"
-                className="footer-logo"
-              />
-            </div>
+      <Footer />
 
-            <p>
-              Connecting Agricultural Living Labs and regenerative agriculture
-              research across Europe.
-            </p>
-          </div>
-
-          <div className="footer-links">
-            <a href="/about">About</a>
-            <a href="/use-cases">Use Cases</a>
-            <a href="/results">Results</a>
-            <a href="/news">News</a>
-            <a href="/partners">Partners</a>
-          </div>
-        </div>
-
-        <div className="container funding">
-          <p>
-            Funded by the European Union. Views and opinions expressed are
-            however those of the author(s) only and do not necessarily reflect
-            those of the European Union or the granting authority.
-          </p>
-        </div>
-      </footer>
     </main>
   );
 }
