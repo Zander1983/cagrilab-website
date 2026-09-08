@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import Footer from "@/app/components/Footer";
 
 export default function Home() {
