@@ -19,7 +19,7 @@ export default function NewsPage() {
 
 
           <nav className="nav-links">
-            <a href="/about">About</a>
+            <a href="/">About</a>
             <a href="/use-cases">Use Cases</a>
             <a href="/results">Results</a>
             <a href="/news">News</a>
