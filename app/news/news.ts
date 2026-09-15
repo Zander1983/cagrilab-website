@@ -5,9 +5,13 @@ export type NewsItem = {
   title: string;
   excerpt: string;
   intro: string;
+  image?: string;
+  imageAlt?: string;
   sections: {
     heading?: string;
     paragraphs: string[];
+    image?: string;
+    imageAlt?: string;
   }[];
 };
 
@@ -18,23 +22,41 @@ export const newsItems: NewsItem[] = [
     category: "Platform Development",
     title: "Exploring agricultural data in the CAgriLab Catalogue",
     excerpt:
-      "The CAgriLab Catalogue provides a place to find agricultural datasets, algorithms and digital tools, including field data collected during the 2026 growing season.",
+      "The CAgriLab Catalogue provides a place to find agricultural datasets, algorithms and digital tools.",
     intro:
       "The CAgriLab Catalogue provides a place to find agricultural datasets, algorithms and digital tools.",
     sections: [
       {
+        heading: "What's in the Catalogue?",
         paragraphs: [
-          "Users can browse the catalogue or search for a particular topic. For example, a search for “soil moisture” currently returns several datasets containing measurements from agricultural fields.",
-          "One of these contains soil moisture measurements from a sugar beet field in Poland. The data were collected between April and August 2026 using sensors installed at different depths in the soil.",
-          "Other datasets in the catalogue include measurements of ground temperature, rainfall and evapotranspiration.",
+          "Users can browse the catalogue to see what data and digital tools are available. The catalogue currently contains resources including field measurements, agricultural datasets and data-processing tools.",
         ],
+        image: "/pic1.png",
+        imageAlt: "CAgriLab Catalogue showing agricultural datasets and algorithms",
       },
       {
-        heading: "Finding data",
+        heading: "Searching for agricultural data",
         paragraphs: [
-          "Each item in the catalogue includes a description of what the dataset contains, who provided it and, where available, where the measurements were taken.",
-          "The catalogue can also be filtered by the type of resource, such as a dataset or algorithm.",
-          "This makes it possible to see what agricultural data and tools are already available through CAgriLab and find resources relevant to a particular topic.",
+          "Users can also search for a particular topic. A search for “soil moisture”, for example, returns several datasets containing measurements from agricultural fields.",
+          "These include soil moisture measurements from sugar beet fields in Poland, as well as data from the OpenAgri project.",
+        ],
+        image: "/pic3.png",
+        imageAlt: "CAgriLab Catalogue search results for soil moisture",
+      },
+      {
+        heading: "Looking inside a dataset",
+        paragraphs: [
+          "Each catalogue entry provides more information about the resource. For example, one dataset contains ground temperature measurements from a sugar beet field in Poland between April and August 2026.",
+          "The description explains where the measurements were taken, how the sensors were installed and what information is contained in the dataset.",
+        ],
+        image: "/pic2.png",
+        imageAlt: "Ground temperature dataset in the CAgriLab Catalogue",
+      },
+      {
+        heading: "Making agricultural data easier to find",
+        paragraphs: [
+          "The catalogue brings information about agricultural datasets and digital tools together in one place. Users can search the catalogue and filter resources by type, making it easier to see what is available for a particular topic.",
+          "This supports CAgriLab's wider goal of making information from agricultural Living Labs easier to find, understand and reuse.",
         ],
       },
     ],

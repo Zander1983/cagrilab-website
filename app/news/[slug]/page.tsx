@@ -68,6 +68,15 @@ export default async function NewsArticlePage({
           <h1>{article.title}</h1>
 
           <p className="article-intro">{article.intro}</p>
+
+          {/* Main article image */}
+          {article.image && (
+            <img
+              src={article.image}
+              alt={article.imageAlt || ""}
+              className="article-image article-hero-image"
+            />
+          )}
         </div>
       </section>
 
@@ -81,6 +90,15 @@ export default async function NewsArticlePage({
               {section.paragraphs.map((paragraph, paragraphIndex) => (
                 <p key={paragraphIndex}>{paragraph}</p>
               ))}
+
+              {/* Optional section image */}
+              {section.image && (
+                <img
+                  src={section.image}
+                  alt={section.imageAlt || ""}
+                  className="article-image"
+                />
+              )}
             </section>
           ))}
 
