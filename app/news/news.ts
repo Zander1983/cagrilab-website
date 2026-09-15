@@ -13,6 +13,33 @@ export type NewsItem = {
 
 export const newsItems: NewsItem[] = [
   {
+    slug: "exploring-cagrilab-catalogue",
+    date: "September 2026",
+    category: "Platform Development",
+    title: "Exploring agricultural data in the CAgriLab Catalogue",
+    excerpt:
+      "The CAgriLab Catalogue provides a place to find agricultural datasets, algorithms and digital tools, including field data collected during the 2026 growing season.",
+    intro:
+      "The CAgriLab Catalogue provides a place to find agricultural datasets, algorithms and digital tools.",
+    sections: [
+      {
+        paragraphs: [
+          "Users can browse the catalogue or search for a particular topic. For example, a search for “soil moisture” currently returns several datasets containing measurements from agricultural fields.",
+          "One of these contains soil moisture measurements from a sugar beet field in Poland. The data were collected between April and August 2026 using sensors installed at different depths in the soil.",
+          "Other datasets in the catalogue include measurements of ground temperature, rainfall and evapotranspiration.",
+        ],
+      },
+      {
+        heading: "Finding data",
+        paragraphs: [
+          "Each item in the catalogue includes a description of what the dataset contains, who provided it and, where available, where the measurements were taken.",
+          "The catalogue can also be filtered by the type of resource, such as a dataset or algorithm.",
+          "This makes it possible to see what agricultural data and tools are already available through CAgriLab and find resources relevant to a particular topic.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "integrated-living-lab-platform",
     date: "August 2026",
     category: "Platform Development",
