@@ -16,6 +16,60 @@ export type NewsItem = {
 };
 
 export const newsItems: NewsItem[] = [
+
+  {
+    slug: "low-cost-soil-structure-assessment",
+    date: "September 2026",
+    category: "Soil Health",
+    title: "From spade to smartphone: making soil assessment more accessible",
+    excerpt:
+      "CAgriLab partner HAMK is exploring how simple field-based soil assessment can be combined with image analysis and low-cost digital tools.",
+    intro:
+      "Assessing soil health does not always require expensive equipment. CAgriLab partner HAMK is exploring how established field methods for evaluating soil structure can be combined with image-based approaches and accessible digital technologies.",
+
+    sections: [
+      {
+        heading: "A simple way to examine soil structure",
+        paragraphs: [
+          "One approach being used in this work is the Visual Evaluation of Soil Structure (VESS), a simple field method for assessing the physical condition of soil.",
+          "A block of soil is removed with a spade and examined for characteristics including aggregate size and shape, porosity and rooting. The soil is then compared with reference examples and assigned a structure score ranging from Sq1, representing good friable structure, to Sq5, representing very compact soil.",
+          "The method provides a practical way of observing differences in soil structure without requiring specialised laboratory equipment.",
+        ],
+        image: "/soil-structure-assessment.png",
+        imageAlt:
+          "Visual guide showing the process of assessing soil structure in the field",
+      },
+      {
+        heading: "From visual assessment to digital measurement",
+        paragraphs: [
+          "CAgriLab is investigating how low-cost and widely available technologies can make agricultural measurements easier to collect and use.",
+          "At HAMK, this includes work on image-based soil structure assessment. The longer-term opportunity is to investigate whether observations traditionally made by examining soil in the field can also be quantified from images using computer vision and artificial intelligence.",
+          "Smartphones are particularly interesting because they combine a camera, computing capability and connectivity in a device that farmers and researchers already routinely carry.",
+        ],
+        image: "/vess-score-chart.png",
+        imageAlt:
+          "VESS soil structure reference chart showing soil structure from friable to very compact",
+      },
+      {
+        heading: "Lowering the barrier to soil health monitoring",
+        paragraphs: [
+          "This work reflects one of CAgriLab's core objectives: developing low-cost approaches for measuring indicators of soil health and biodiversity.",
+          "Rather than relying only on specialist sensors or laboratory measurements, the project is exploring how smartphones, cameras and other accessible technologies can complement established agricultural assessment methods.",
+          "Making measurements easier and cheaper to collect could allow more farmers and Living Labs to contribute observations, helping to expand the evidence available on soil condition and regenerative agricultural practices.",
+        ],
+      },
+      {
+        heading: "Connecting field observations with CAgriLab",
+        paragraphs: [
+          "The next step is not simply to make individual measurements, but to make those measurements useful across Living Labs.",
+          "CAgriLab is developing Digital Twins and data-sharing infrastructure that can bring together information about fields, experiments, management practices and environmental conditions.",
+          "In this way, a simple observation made in the field could become part of a wider digital record that helps researchers compare conditions across locations and discover evidence from farms and Living Labs operating under similar circumstances.",
+        ],
+      },
+    ],
+  },
+
+
   {
     slug: "exploring-cagrilab-catalogue",
     date: "September 2026",
