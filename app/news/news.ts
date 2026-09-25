@@ -7,12 +7,14 @@ export type NewsItem = {
   intro: string;
   image?: string;
   imageAlt?: string;
-  sections: {
-    heading?: string;
-    paragraphs: string[];
-    image?: string;
-    imageAlt?: string;
-  }[];
+sections: {
+  heading?: string;
+  paragraphs: string[];
+  image?: string;
+  imageAlt?: string;
+  imageCredit?: string;
+  imageCreditUrl?: string;
+}[];
 };
 
 export const newsItems: NewsItem[] = [
@@ -31,13 +33,16 @@ export const newsItems: NewsItem[] = [
       {
         heading: "A simple way to examine soil structure",
         paragraphs: [
-          "One approach being used in this work is the Visual Evaluation of Soil Structure (VESS), a simple field method for assessing the physical condition of soil.",
-          "A block of soil is removed with a spade and examined for characteristics including aggregate size and shape, porosity and rooting. The soil is then compared with reference examples and assigned a structure score ranging from Sq1, representing good friable structure, to Sq5, representing very compact soil.",
+          "One approach being used in this work is visual evaluation of soil structure. The Finnish MARA (Maan rakenteen aistinvarainen arviointi) method provides a practical field-based approach for assessing the physical condition of soil.",
+          "A block of soil is removed with a spade and examined for characteristics including aggregate structure, porosity and rooting. The soil can then be compared with reference examples representing different levels of soil structure.",
           "The method provides a practical way of observing differences in soil structure without requiring specialised laboratory equipment.",
         ],
         image: "/soil-structure-assessment.png",
         imageAlt:
           "Visual guide showing the process of assessing soil structure in the field",
+        imageCredit:
+          "Maan rakenteen aistinvarainen arviointi (MARA), University of Helsinki Ruralia Institute / OSMO project. CC BY-SA 4.0.",
+        imageCreditUrl: "https://aoe.fi/materiaali/1126",
       },
       {
         heading: "From visual assessment to digital measurement",
@@ -48,7 +53,9 @@ export const newsItems: NewsItem[] = [
         ],
         image: "/vess-score-chart.png",
         imageAlt:
-          "VESS soil structure reference chart showing soil structure from friable to very compact",
+          "Soil structure reference chart showing soil structure from friable to very compact",
+        imageCredit:"Maan rakenteen aistinvarainen arviointi (MARA), University of Helsinki Ruralia Institute / OSMO project. CC BY-SA 4.0.",
+        imageCreditUrl: "https://aoe.fi/materiaali/1126",
       },
       {
         heading: "Lowering the barrier to soil health monitoring",

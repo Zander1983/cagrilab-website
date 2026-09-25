@@ -91,13 +91,33 @@ export default async function NewsArticlePage({
                 <p key={paragraphIndex}>{paragraph}</p>
               ))}
 
+
               {/* Optional section image */}
               {section.image && (
-                <img
-                  src={section.image}
-                  alt={section.imageAlt || ""}
-                  className="article-image"
-                />
+                <div className="article-image-wrapper">
+                  <img
+                    src={section.image}
+                    alt={section.imageAlt || ""}
+                    className="article-image"
+                  />
+
+                  {section.imageCredit && (
+                    <p className="article-image-credit">
+                      Source:{" "}
+                      {section.imageCreditUrl ? (
+                        <a
+                          href={section.imageCreditUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {section.imageCredit}
+                        </a>
+                      ) : (
+                        section.imageCredit
+                      )}
+                    </p>
+                  )}
+                </div>
               )}
             </section>
           ))}
